@@ -1,1 +1,11 @@
 /* BASIC STYLES HERE */
+.fixed-size-card {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-size-card .card-body {
+  overflow-y: auto;
+}
