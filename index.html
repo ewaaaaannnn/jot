@@ -26,14 +26,14 @@
     <div class="row">
       <section class="col-md-4">
         <div class="text-right">
-          <p>0 Jots</p>
+          <p><span id="note-count"></span> Jots</p>
         </div>
         <form onsubmit="app.NoteController.createNote()" class="mb-3">
           <label for="color" class="form-label">Choose a color</label>
           <input type="color" class="form-control" name="color" id="color" />
           <label for="" class="form-label"></label>
-          <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId"
-            placeholder="Title" />
+          <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="Title"
+            minlength="3" maxlength="15" />
           <button type="submit" class="btn btn-primary mt-3">Create</button>
         </form>
         <div id="notes-list">
@@ -51,9 +51,9 @@
               </div>
             </div> -->
         </div>
-
       </section>
-      <section class="col-md-8"></section>
+      <section id="active-note" class="col-md-7"></section>
+
     </div>
   </main>
 
